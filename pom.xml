@@ -3,11 +3,6 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <parent>
-        <groupId>com.hasura</groupId>
-        <artifactId>ndc-calcite</artifactId>
-        <version>1.0.0</version>
-    </parent>
 
     <groupId>com.kenstott.components</groupId>
     <artifactId>splunk-jdbc-driver</artifactId>
@@ -15,8 +10,8 @@
     <packaging>jar</packaging>
     
     <name>Splunk JDBC Driver</name>
-    <description>A JDBC driver for Splunk using Apache Calcite with PostgreSQL-compatible SQL syntax</description>
-    <url>https://github.com/hasura/ndc-calcite/tree/main/calcite-rs-jni/splunk-jdbc-driver</url>
+    <description>A JDBC driver for Splunk with PostgreSQL-compatible SQL syntax</description>
+    <url>https://github.com/kenstott/splunk-jdbc-driver</url>
     
     <licenses>
         <license>
@@ -34,13 +29,6 @@
             <organizationUrl>https://github.com/kenstott</organizationUrl>
         </developer>
     </developers>
-    
-    <scm>
-        <connection>scm:git:git://github.com/hasura/ndc-calcite.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com:hasura/ndc-calcite.git</developerConnection>
-        <url>https://github.com/hasura/ndc-calcite/tree/main/calcite-rs-jni/splunk-jdbc-driver</url>
-        <tag>HEAD</tag>
-    </scm>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
