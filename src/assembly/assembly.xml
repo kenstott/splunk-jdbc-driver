@@ -19,7 +19,6 @@
             <outputDirectory>/</outputDirectory>
             <useProjectArtifact>false</useProjectArtifact>
             <unpack>true</unpack>
-            <scope>runtime</scope>
             <unpackOptions>
                 <excludes>
                     <!-- Exclude duplicate service files -->

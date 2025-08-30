@@ -6,12 +6,20 @@
 
     <groupId>com.kenstott.components</groupId>
     <artifactId>splunk-jdbc-driver</artifactId>
-    <version>1.1.2</version>
+
+    <version>1.1.7</version>
     <packaging>jar</packaging>
     
     <name>Splunk JDBC Driver</name>
     <description>A JDBC driver for Splunk with PostgreSQL-compatible SQL syntax</description>
     <url>https://github.com/kenstott/splunk-jdbc-driver</url>
+    
+    <scm>
+        <connection>scm:git:git://github.com/kenstott/splunk-jdbc-driver.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com:kenstott/splunk-jdbc-driver.git</developerConnection>
+        <url>https://github.com/kenstott/splunk-jdbc-driver</url>
+        <tag>HEAD</tag>
+    </scm>
     
     <licenses>
         <license>
@@ -47,21 +55,25 @@
             <groupId>org.apache.calcite</groupId>
             <artifactId>calcite-core</artifactId>
             <version>${calcite.version}</version>
+            <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>org.apache.calcite</groupId>
             <artifactId>calcite-splunk</artifactId>
             <version>${calcite.version}</version>
+            <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>org.apache.calcite</groupId>
             <artifactId>calcite-linq4j</artifactId>
             <version>${calcite.version}</version>
+            <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>org.apache.calcite</groupId>
             <artifactId>calcite-babel</artifactId>
             <version>${calcite.version}</version>
+            <optional>true</optional>
         </dependency>
 
         <!-- Avatica for JDBC -->
@@ -432,12 +444,6 @@
                             <tokenAuth>true</tokenAuth>
                             <publishingServerId>central</publishingServerId>
                             <autoPublish>true</autoPublish>
-                            <checksumAlgorithms>
-                                <checksumAlgorithm>SHA-256</checksumAlgorithm>
-                                <checksumAlgorithm>SHA-512</checksumAlgorithm>
-                                <checksumAlgorithm>MD5</checksumAlgorithm>
-                                <checksumAlgorithm>SHA-1</checksumAlgorithm>
-                            </checksumAlgorithms>
                         </configuration>
                     </plugin>
                 </plugins>
