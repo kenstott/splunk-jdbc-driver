@@ -3,11 +3,17 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.kenstott.components</groupId>
+        <artifactId>splunk-jdbc-parent</artifactId>
+        <version>1.0.0</version>
+        <relativePath>parent-pom.xml</relativePath>
+    </parent>
 
     <groupId>com.kenstott.components</groupId>
     <artifactId>splunk-jdbc-driver</artifactId>
 
-    <version>1.2.0-SNAPSHOT</version>
+    <version>1.3.2</version>
     <packaging>jar</packaging>
     
     <name>Splunk JDBC Driver</name>
@@ -441,6 +447,12 @@
                             <tokenAuth>true</tokenAuth>
                             <publishingServerId>central</publishingServerId>
                             <autoPublish>true</autoPublish>
+                            <checksumAlgorithms>
+                                <checksumAlgorithm>SHA-256</checksumAlgorithm>
+                                <checksumAlgorithm>SHA-512</checksumAlgorithm>
+                                <checksumAlgorithm>MD5</checksumAlgorithm>
+                                <checksumAlgorithm>SHA-1</checksumAlgorithm>
+                            </checksumAlgorithms>
                         </configuration>
                     </plugin>
                 </plugins>
