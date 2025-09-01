@@ -12,6 +12,15 @@
             <directory>${project.build.outputDirectory}</directory>
             <outputDirectory>/</outputDirectory>
         </fileSet>
+        <!-- Include LICENSE file in META-INF -->
+        <fileSet>
+            <directory>${project.basedir}</directory>
+            <outputDirectory>META-INF</outputDirectory>
+            <includes>
+                <include>LICENSE</include>
+                <include>NOTICE</include>
+            </includes>
+        </fileSet>
     </fileSets>
 
     <dependencySets>
